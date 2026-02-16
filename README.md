@@ -16,7 +16,6 @@ This project was created as part of a Web Technology academic assignment.
 - 🎤 Speakers section
 - 📝 Registration form with event selection dropdown
 - 📧 Contact form
-- 🎨 Attractive yellow-gold theme
 - 📱 Responsive layout using CSS Grid
 - ✅ Basic form validation using JavaScript
 
