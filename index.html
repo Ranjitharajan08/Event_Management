@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="events.html">Events</a>
+<a href="schedule.html">Schedule</a>
+<a href="speakers.html">Speakers</a>
+<a href="register.html">Register</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Future Tech Summit 2026</h1>
+    <p>Innovation • Networking • Future</p>
+
+    <h3>Upcoming Event Starts In:</h3>
+    <div id="countdown"></div>
+
+    <br>
+    <a href="register.html">
+        <button>Register Now</button>
+    </a>
+</div>
+
+
+<footer>© 2026 Future Tech Summit</footer>
+
+<script>
+    // Set event date
+    const eventDate = new Date("March 30, 2026 10:00:00").getTime();
+
+    const timer = setInterval(function () {
+
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML =
+            days + " Days " +
+            hours + " Hours " +
+            minutes + " Minutes " +
+            seconds + " Seconds";
+
+        if (distance < 0) {
+            clearInterval(timer);
+            document.getElementById("countdown").innerHTML = "Event Started!";
+        }
+
+    }, 1000);
+</script>
+
+
+</body>
+</html>

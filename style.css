@@ -1,0 +1,162 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf6ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    background: linear-gradient(to right, #e53935, #8e24aa);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section */
+.section {
+    padding: 50px 10%;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8e24aa;
+}
+
+/* Hero (Home Page) */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #e53935, #8e24aa);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #d3aede;
+}
+
+
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Countdown */
+#countdown {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(to right, #e53935, #8e24aa);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #8e24aa;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Speaker Images */
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Tabs (Schedule Page) */
+.tabs {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 8px 20px;
+    margin: 5px;
+    background-color: #e1bee7;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tab-btn.active {
+    background-color: #8e24aa;
+    color: white;
+}
+
+/* Forms */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #e53935;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #8e24aa, #e53935);
+    color: white;
+}

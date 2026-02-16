@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Future Tech Summit 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html">Home</a>
+<a href="events.html">Events</a>
+<a href="schedule.html">Schedule</a>
+<a href="speakers.html">Speakers</a>
+<a href="register.html">Register</a>
+<a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="section">
+        <h1>Event Registration</h1>
+
+        <form onsubmit="registerForm(event)">
+
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" required>
+
+            <label>Select Event</label>
+            <select required>
+                <option value="">-- Choose an Event --</option>
+                <option>AI & Machine Learning Workshop</option>
+                <option>Cloud Computing Seminar</option>
+                <option>Cyber Security Panel Discussion</option>
+            </select>
+
+            <button type="submit">Register Now</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Future Tech Summit | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
